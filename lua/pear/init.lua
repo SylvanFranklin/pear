@@ -3,10 +3,10 @@ local M = {}
 M.jump_pair = function()
     local ext = vim.fn.expand("%:e")
 
-    local source_exts = { "cpp", "c", "frag", "server.ts", "js", "ts", "jsx", "tsx", "py", "java", "rs", "go", "css",
+    local source_exts = { "c", "cpp", "cc", "cxx", "frag", "server.ts", "js", "ts", "jsx", "tsx", "py", "java", "rs", "go", "css",
         "scss", "less" }
 
-    local header_exts = { "h", "hpp", "hh", "vert", "svelte", "html", "vue", "component.ts", "component.js", "types.ts",
+    local header_exts = { "h", "hpp", "hh", "hxx", "vert", "svelte", "html", "vue", "component.ts", "component.js", "types.ts",
         "interface.ts", "d.ts", "test.py", "spec.ts", "spec.js", "test.js", "test.ts" }
 
     local target_exts = nil
